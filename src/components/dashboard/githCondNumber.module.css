@@ -1,0 +1,74 @@
+/* Repost statistisk-four-box start   */
+.stasContainer {
+    display: flex;
+    /* justify-content:space-evenly; */
+    width: 100%;
+    margin-top: 2rem;
+    flex-wrap:wrap;
+  }
+
+ 
+
+  .reposBox {
+    flex: 0 1 calc(25% - 2rem); /* flex:0(flex-grow) 1(flex-shrink) 25%(flex-basis)*/
+    height: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 0.2rem;
+    background-color: #fff;
+    
+    margin-left: 1.6rem;
+    box-sizing: border-box;
+  }
+
+
+  @media only screen and (max-width: 1050px) { 
+    .reposBox {
+      flex: 0 1 calc(50% - 2.4rem);
+  }
+
+  .reposBox:last-child, .reposBox:nth-child(4n-1){
+    margin-top:2rem;
+  }
+  }
+
+  @media only screen and (max-width: 500px) { 
+   
+    .reposBox {
+      flex: 0 1 calc(100% - 3.2rem);
+  }
+
+  .reposBox:nth-child(3n+2){
+    margin-top:2rem;
+  }
+  }
+
+
+  .reposBoxIcon {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    background-color: pink;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .faClipboard {
+    font-size: 1.4rem;
+  }
+  .reposBoxStas {
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.006rem;
+  }
+  .reposBoxStasNum {
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+  .reposBoxStasTxt {
+    font-size: 1.1rem;
+  }

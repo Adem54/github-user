@@ -1,0 +1,13 @@
+.userFollowersBox {
+    display: flex;
+    /* justify-content:space-evenly; */
+    width: 100%;
+    margin-top: 4rem;
+    
+}
+
+@media only screen and (max-width: 1050px) { 
+    .userFollowersBox {
+        flex-wrap:wrap;
+    }
+}

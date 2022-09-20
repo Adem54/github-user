@@ -1,0 +1,81 @@
+
+
+.chartsContent{
+    display:flex;
+    width:100%;
+     /* flex-wrap:wrap; */
+    /* margin-bottom:2rem; */
+}
+
+.chartItem {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    height: 24rem;
+    border-radius: 0.2rem;
+    background-color: #fff;
+     margin-top: 2rem;
+    margin-left: 1.6rem;
+    box-sizing: border-box;
+    
+}
+
+.pie{
+    flex:0 2 calc(40% - 1.8rem);
+}
+
+.verticalBarChart {
+    flex:0 3 calc(60% - 3rem);
+}
+
+
+@media only screen and (max-width: 1300px) {
+   
+    /* .mainWrapper {
+      width:98%;
+    }
+     */
+
+     .pie{
+        flex:0 2 calc(50% - 2.4rem);
+    }
+    
+    .verticalBarChart {
+        flex:0 2 calc(50% - 2.4rem);
+    }
+  }
+
+  @media only screen and (max-width: 1050px) {
+     .chartsContent{
+        display:flex;
+        width:100%;
+         flex-wrap:wrap;
+        /* margin-bottom:2rem; */
+    }
+
+     .pie{
+        flex:0 2 calc(100% - 3.2rem);
+    }
+    
+    .verticalBarChart {
+        flex:0 2 calc(100% - 3.2rem);
+    }
+  }
+
+
+  @media only screen and (max-width: 550px) {
+    .chartsContent{
+       display:flex;
+       width:100%;
+        flex-wrap:wrap;
+       /* margin-bottom:2rem; */
+   }
+
+    .pie{
+       flex:0 2 calc(100% - 3.2rem);
+   }
+   
+   .verticalBarChart {
+       flex:0 2 calc(100% - 3.2rem);
+   }
+ }

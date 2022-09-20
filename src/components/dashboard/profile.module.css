@@ -1,0 +1,41 @@
+.profile{
+    width:100vw;
+    height:5rem;
+    background-color: #fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:1.5rem 0;
+    box-sizing: border-box;
+}
+
+.profileImg {
+    border-radius:50%;
+    height:120%;
+}
+
+.greeting {
+    margin:0 1.3rem;
+}
+.greeting>span{
+    text-transform:capitalize;
+    font-family:"Roboto",sans-serif;
+    letter-spacing: .1rem;
+}
+
+.greeting>.userName {
+    text-transform:uppercase;
+    font-weight:700;
+    color:#102a42;
+}
+
+
+.logout{
+    text-decoration: none;
+    font-size:1.5rem;
+    color:#617d98;
+    text-transform:capitalize;
+    border:none;
+    background-color:transparent;
+    cursor:pointer;
+}

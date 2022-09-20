@@ -1,0 +1,118 @@
+
+  .user {
+    flex: 0 1 calc(50% - 2.4rem); 
+    margin-left:1.6rem;
+    background-color: #fff;
+    display:flex;
+    flex-direction:column;
+    border-radius:.2rem;
+    align-items:flex-start;
+    box-sizing: border-box;
+    padding:2rem;
+   position:relative;
+  }
+
+  @media only screen and (max-width: 1050px) { 
+    .user {
+      flex: 0 1 calc(100% - 3.2rem); 
+  }
+  }
+
+
+
+  .user:before {
+position:absolute;
+width:5rem;
+height:2.3rem;
+content: "User";
+background-color: #fff;
+border-radius: .2rem;
+top:-2rem;
+left:0;
+display:flex;
+align-items:center;
+justify-content: center;
+color:#617d98;
+font-size:1rem;
+letter-spacing:.1rem;
+  }
+  .userTop {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+.imgName {
+    display:flex;
+    align-items: center;
+}
+
+.nameTwitter_userName {
+    display:flex;
+    flex-direction:column;
+    margin-left:1rem;
+    letter-spacing: .1rem;
+}
+span.name {
+    font-weight:700;
+    margin-bottom:.3rem;
+}
+
+span.twitter_userName {
+    color:#617d98;
+}
+
+  img.userAvatar{
+    width:16%;
+    border-radius: 50%;
+  }
+  .followBtn {
+    border:none;
+    background-color: transparent;
+    border:1px solid #2caeba;
+    border-radius:1rem;
+    padding:.5rem;
+    font-size:1rem;
+    letter-spacing: .15rem;
+    color:#2caeba;
+    font-weight: 400;
+
+  }
+  .followBtn:hover{
+    color:#fff;
+    background-color:#2caeba ;
+    cursor:pointer;
+  } 
+
+  span.bio {
+    color:#324d67;
+    letter-spacing:.005rem;
+    margin:1.3rem 0 1.5rem 0;
+  }
+.companyInfo {
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+
+.companyInfo>section{
+    margin-bottom:.8rem;
+}
+
+.companyInfo>section>span{
+    margin-left:.4rem;
+    letter-spacing: .005rem;
+}
+
+.companyName>span, .companyPlace>span{
+    color:#617d98;
+}
+
+.compoanyBlog>span{
+    color:#2caeba;
+}
+
+.faSolid{
+    font-size: 1rem;
+    color: #617d98;
+    margin-left: 0.5rem;
+}

@@ -1,0 +1,87 @@
+
+
+
+.followersWrapper {
+    flex: 0 1 calc(50% - 2.4rem); 
+    margin-left:1.6rem;
+    position: relative;
+}
+
+@media only screen and (max-width: 1050px) { 
+  .followersWrapper {
+    flex: 0 1 calc(100% - 3.2rem); 
+    margin-top:4rem;
+}
+}
+
+
+
+  .followers {
+   width:100%;
+    background-color: #fff;
+    overflow-y:scroll;
+    overflow-x:none;
+   height:20rem;
+   box-sizing: border-box;
+   display:flex;
+   flex-direction:column;
+   padding:2rem;
+   border-radius:.2rem;
+ 
+  }
+
+  .followersWrapper:before {
+    position:absolute;
+    width:5rem;
+    height:2.3rem;
+    padding:0 1rem;
+    content: "Followers";
+    background-color: #fff;
+    border-radius: .2rem;
+    top:-2rem;
+    left:0;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    color:#617d98;
+    font-size:1rem;
+    letter-spacing:.1rem;
+    
+      }
+
+ 
+
+  .imgNameUrl {
+    display:flex;
+    align-items:center;
+    margin-bottom:1.4rem;
+  }
+
+  .followerAvatar {
+    width:10%;
+    border-radius:50%;
+    object-fit:cover;
+    object-position: top;
+    
+    
+  }
+  .nameUrl {
+    display:flex;
+    flex-direction:column;
+    align-items: flex-start;
+    margin-left:1rem;
+    letter-spacing: .05rem;
+
+  }
+  
+  .name {
+    font-weight:700;
+    margin-bottom:.3rem;
+    text-transform:capitalize;
+}
+
+  .url{
+    color:#617d98;
+    text-decoration: none;
+  }
+  

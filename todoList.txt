@@ -1,0 +1,28 @@
+1-usersSlice,store ve usersApi dosyalarimzin typescript durumunu en bastan cek edecegiz
+
+2-Bu uygulamada reduxtoolkit, createSlice icinde, createAsyncThunk middleware aracilig ile axios uzerinden
+yapacagzimz asenkron api request-response islemlerini lokal state e slice icindeki extraReducer araciligi ile
+alam yaklasimi olan yaklasimi kullanacagiz..
+3-useLoginAuth islemini yapacagiz...
+Once 1 tane Login-SignUp islemi icin tek bir buton, hem login-hem signup icin kullanilacak tek bir buton ayarlayalim
+4-onclick,onchange gibi event handling deki any olarak yaptigini type lari dogrusu ile degistir mutlaka
+any type i kullanamamaya calis
+5-Ilk login sayfasi gelirken resim daha gec geliyor ondan dolayi
+once yazilari resimsiz gosteriyor sonra resim gelince
+duzgun bir goruntu olusuyor, buna bakalim esas projede bu cok daha 
+duzgun yapilmis...
+6-redux-toolkit de extrareducer ile islem yaparken , createAsyncThunk i kullanrak yaptimiz
+asenkron islemlerde bir method icinde nasil axios.all veya Promise.All kullanabilirz?
+7-Refactoring icin kesinlikle zaman ayirmaliyiz
+8-Responsive design i tamamen hallet
+9-Type lari bastan savma yapma, any olarak type kalmasin kullandigin...
+10.Structure ve dosya isimlendirmeleriine  ceki duzen ver.
+11.Reusable button component te yapacagiz unutma
+12.Udemy deki projeden request i nerden almis ve grafiklerdeki
+kriterleri hangi data lardan cekmis onlari kontrol edip kendi
+projemde uygulamayalim ardindan da kendi projeme login kismini
+tekrar entegre edelim ordan sonra yapacagimz structure ve naming
+convention ile ilgili degisiklikleri yapip sonra tekrar
+udemy deki projenin ustunden gecip, bu projeyi nihayete erdirelim
+13.any type larini yerini degistir, chart.ts ve slice icinde var ozellikle
+14-Responsive yapma meselesini unutmayalim en onemli seylerden biridir
