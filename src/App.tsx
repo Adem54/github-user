@@ -6,6 +6,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 import Content from "./components/dashboard/Content";
 import {BrowserRouter,Routes,Route,} from "react-router-dom";
 import ProtectedRoute from "./components/protectedRoute";
+import { NotFound } from "./components/notFound";
 
 
 
@@ -40,7 +41,9 @@ function App() {
        */}
         <Route  element={<ProtectedRoute/>}>
           <Route path="/dashboard" element={<Content/>}/>
-        </Route>      
+         
+        </Route>   
+        <Route path="*" element={<NotFound/>}/>   
       </Routes>   
       </main>
     </div>
