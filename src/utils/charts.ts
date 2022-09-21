@@ -145,7 +145,7 @@ export const chartConfigs = ({
         captionFontSize: 24,
         captionFont: "Roboto",
         baseFont: "Open Sans",
-        baseFontSize: 14,
+        baseFontSize: 13,
         baseFontColor: "#617d98",
         smartLineColor: "#617d98",
         showShadow: 0,
@@ -157,7 +157,7 @@ export const chartConfigs = ({
         bgColor: "#FFFFFF",
         showBorder: 0,
         decimals: 0,
-        pieRadius: "50%", //bunun ile pie ile doughnut grafiklerinin sayfa icinde buyuklugnu ayarlayabiliriz
+        pieRadius: "48%", //bunun ile pie ile doughnut grafiklerinin sayfa icinde buyuklugnu ayarlayabiliriz
 
         xAxisNameFontSize: 12,
         yAxisNameFontSize: 12,
