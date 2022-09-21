@@ -1,46 +1,57 @@
-# Getting Started with Create React App
+# react-quiz-app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) TS template.
+#####  Integreted Development Environment:Visual Studio Code  
 
-## Available Scripts
 
-In the project directory, you can run:
+ 
+ <img width="180" src="https://user-images.githubusercontent.com/48107744/188961937-671739fd-37b3-4d4b-a347-eb4943a74be4.jpg" >
 
-### `npm start`
+### About The Project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The project called Github-App makes us see any users who are in public in Github by searching them on the user name, Githup performance in detail. In the project shown in details with graphs, we can see the most forked projects, the most used projects, the most used programming language, and the programming languages used in the most starred projects. In the project, where the Login-Signup system was integrated by using Auth0, our Dashboard page was protected by using ProtectedTroute.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Built With
 
-### `npm test`
+<ul>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<li>REACT</li>
+<li>REACT ROUTER DOM</li>
+<li>REDUX TOOLKIT</li>
+<li>TYPESCRIPT</li>
+<li>CSS MODULES</li>
+<li>FUSIONCHARTS</li>
+<li>DYNAMIC AXIOS DATA FETCHING</li>
+<li>AUTH0 LOGIN-SIGNUP</>
+<li>REUSABLE COMPONENTS</li>
+ 
+</ul>
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### How to Install and Run the Project
+The project can be cloned or downloaded via github to local pc. And, go into project folder in your terminal and run command npm install.
+Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser. It is important to open in 3000 port, because Auth0 application is integrated based on 3000 port.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Typescript
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+  <img width="580" src="https://user-images.githubusercontent.com/48107744/188970608-d8880d11-498c-49cf-a822-c9cb66edb411.png" >
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### React Context
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  <img width="580" src="https://user-images.githubusercontent.com/48107744/188971930-106db7e7-ae9d-4518-8843-9f048d6a88a7.png" >
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+#### React userReducer
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+  <img width="580" src="https://user-images.githubusercontent.com/48107744/188972186-b6149f07-1bb6-4862-b17c-17987260975b.png" >
 
-## Learn More
+#### React-router-dom
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  <img width="580" src="https://user-images.githubusercontent.com/48107744/188972903-792a2bf0-b3cc-415c-a05e-92f69f2cdf4f.png" >
+  
+#### Dynamic-axios-fetch
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  
+  <img width="580" src="https://user-images.githubusercontent.com/48107744/188973281-9402a57f-000c-45f8-8336-bae1be31bba2.png" >
+
+
+
