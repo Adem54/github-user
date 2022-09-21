@@ -8,16 +8,14 @@ import Column2D from "fusioncharts/fusioncharts.charts";
 
 // Include the theme as fusion
 import FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
-import { selectReposByRepoName } from "../../../features/users/usersSlice";
-import { useSelector } from "react-redux";
-import { getFirstFiveData, colors, chartConfigs,getMostForkedRepoNames } from "../../../utils/charts";
-import { getChartStyle } from "../../../utils/chartStyle";
 import ReactFusioncharts from 'react-fusioncharts';
+import { useSelector } from "react-redux";
+import { selectReposByRepoName } from "../../../features/users/usersSlice";
+import { chartConfigs, colors, getFirstFiveData, getMostForkedRepoNames } from "../../../utils/charts";
 import styles from "./chart.module.css";
 
 // Adding the chart and theme as dependency to the core fusioncharts
 ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
-const style = getChartStyle("0 1 calc(60% - 3rem)");
 const HorizontalBarChart = () => {
   const repos = useSelector(selectReposByRepoName);
   const chartData = getFirstFiveData(getMostForkedRepoNames(repos),colors);

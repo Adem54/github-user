@@ -82,18 +82,7 @@ svg {
   
 }
 
-/*
-Bu da bestpractise bilmemiz gereken noktalardan birisidir...
-Eger biz hazir bir kutuphaneden bir grafik, chart tarzi seyler kullaniyorsak
-onu hazir aliyoruz hatta css leri de hazir geliyor ancak, bu tarz grafikler
-svg ile yazildigi icin ayrica kendine ait class ve style lari olabiliyor 
-bizim ona mudahele etmemiz gerekecektir...bunu bilmemiz cook onemli, bazen
-mudahele edip de sonuc alamayabiliriz o durumlarda da important i dusunebiilriz....
-Birde sunu anlamaliyiz, eger ekran kuculdukce bir grafik veya herhangi bir kutu 
-hic kuculmiyor ayni kaliyor ise demekki biz o kutuya sabit bir genislik 
-vermisiz orneign 470px gibi halbuki onun yerine ona % ile bir genislik verse idik
-o da kendini ekrana gore ayarlayarak ekran kuculdukce kuculup ekran buyudukce de buyurdu
-*/
+
 @media only screen and (max-width: 575px) {
   
   div {

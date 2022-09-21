@@ -7,17 +7,15 @@ import FusionCharts from "fusioncharts";
 import Column2D from "fusioncharts/fusioncharts.charts";
 // Include the theme as fusion
 import FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
+import ReactFusioncharts from "react-fusioncharts";
 import { useSelector } from "react-redux";
 import { selectReposByRepoName } from "../../../features/users/usersSlice";
-import { chartConfigs, colors, getFirstFiveData,getMostStarredRepoNames } from "../../../utils/charts";
-import { getChartStyle } from "../../../utils/chartStyle";
-import ReactFusioncharts from "react-fusioncharts";
+import { chartConfigs, colors, getFirstFiveData, getMostStarredRepoNames } from "../../../utils/charts";
 import styles from "./chart.module.css";
 
 // Adding the chart and theme as dependency to the core fusioncharts
 ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
 
-const style = getChartStyle("0 1 calc(60% - 3rem)");
 const VerticalBarChart = () => {
 const repos = useSelector(selectReposByRepoName);
 const chartData = getFirstFiveData(getMostStarredRepoNames(repos),colors);

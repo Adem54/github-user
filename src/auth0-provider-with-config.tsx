@@ -1,7 +1,5 @@
 import { Auth0Provider } from "@auth0/auth0-react";
-import React, { PropsWithChildren } from "react";
-
-
+import React from "react";
 
 export const Auth0ProviderWithConfig = ({
   children}: PropsType) => {
@@ -9,7 +7,6 @@ export const Auth0ProviderWithConfig = ({
   const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
   const redirectUri = window.location.origin;//http://localhost:3000
   
-
   if (!(domain && clientId && redirectUri)) {
     return null;
   }

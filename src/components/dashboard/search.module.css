@@ -1,93 +1,95 @@
 .searchReqBox {
-    margin-top: 3rem;
-    display: flex;
-    justify-content: flex-start;
-    width: 100%;
-    box-sizing: border-box;
-  }
+  margin-top: 3rem;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  box-sizing: border-box;
+}
 
-  /*html display flex te iki satir da biri 4 esit parca ya bolunmus aralarinda ve en sag ve en sol da esit bosluklar
+/*html display flex te iki satir da biri 4 esit parca ya bolunmus aralarinda ve en sag ve en sol da esit bosluklar
 mevcut, ve onun uzerinden ise 3 kutunun yerini alan 1 kutu ve diger 1 kutunun yerini alan da bir kutu
 ve bunlar, responsive sekilde, tam birbirne hizalanacak ve ekran kuculup buyuunce de ayni sekilde konumunu
 koruyacak sekilde planladik..BESTPRACTISE....
 */
+.search {
+  flex: 0 1 calc(75% - 2.8rem);
+  margin-left: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 3.4rem;
+  background-color: #fff;
+  border-radius: 0.3rem;
+}
+
+@media only screen and (max-width: 650px) {
+
+  .searchReqBox {
+    flex-wrap: wrap;
+  }
+
   .search {
-    flex: 0 1 calc(75% - 2.8rem);
-    margin-left: 1.6rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 3.4rem;
-    background-color: #fff;
-    border-radius: 0.3rem;
+    flex: 0 1 calc(100% - 3.2rem);
   }
+}
 
-  @media only screen and (max-width: 650px) { 
+/*  flex:0 1 calc(25% - 2rem);/* flex:0(flex-grow) 1(flex-shrink) 25%(flex-basis)*/
 
-    .searchReqBox{
-flex-wrap:wrap;
-    }
-    .search {
-      flex: 0 1 calc(100% - 3.2rem); 
-  }
-  }
+.faMagnifyingGlass {
+  font-size: 1rem;
+  color: #617d98;
+  margin-left: 0.5rem;
+}
 
-  /*  flex:0 1 calc(25% - 2rem);/* flex:0(flex-grow) 1(flex-shrink) 25%(flex-basis)*/
 
-  .faMagnifyingGlass {
-    font-size: 1rem;
-    color: #617d98;
-    margin-left: 0.5rem;
-  }
-
- 
-  .searchInput {
-    flex: 0 1 calc(81%);
-    height: 2rem;
-    border-color: transparent;
-    outline-color: #f1f5f8;
-    /*Bestpractise..outline-color ile input uzerine fokuslaninca,
+.searchInput {
+  flex: 0 1 calc(81%);
+  height: 2rem;
+  border-color: transparent;
+  outline-color: #f1f5f8;
+  /*Bestpractise..outline-color ile input uzerine fokuslaninca,
 border rengi daha sonuk bir renk olarak aliyoruz..
 */
-    letter-spacing: 0.1rem;
-    color: #324d67;
-    font-size: 1.3rem;
-    margin-left: 0.6rem;
-  }
+  letter-spacing: 0.1rem;
+  color: #324d67;
+  font-size: 1.3rem;
+  margin-left: 0.6rem;
+}
 
-  .searchBtn {
-    border: none;
-    padding: 0.4rem 0.7rem;
-    font-size: 1.3rem;
-    letter-spacing: 0.1rem;
-    border-radius: 0.3rem;
-    color: #fff;
-    background-color: #2caeba;
-    margin-right: 0.1rem;
-    transition: all 0.5s linear;
-  }
+.searchBtn {
+  border: none;
+  padding: 0.4rem 0.7rem;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  border-radius: 0.3rem;
+  color: #fff;
+  background-color: #2caeba;
+  margin-right: 0.1rem;
+  transition: all 0.5s linear;
+}
 
-  .searchBtn:hover {
-    cursor: pointer;
-    color: #000;
-    background-color: #88ebf2;
-  }
+.searchBtn:hover {
+  cursor: pointer;
+  color: #000;
+  background-color: #88ebf2;
+}
+
+.request {
+  flex: 0 1 calc(25% - 2rem);
+  margin-left: 1.6rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+  color: #617d98;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+@media only screen and (max-width: 650px) {
+
   .request {
-    flex: 0 1 calc(25% - 2rem);
-    margin-left: 1.6rem;
-    display: flex;
-    align-items: center;
-    font-size: 1.7rem;
-    letter-spacing: 0.1rem;
-    color: #617d98;
-    font-weight: 400;
-    font-family: "Roboto", sans-serif;
+    flex: 0 1 calc(100% - 3.2rem);
+    margin-top: 2rem;
   }
-
-  @media only screen and (max-width: 650px) { 
-   
-    .request {
-      flex: 0 1 calc(100% - 3.2rem); 
-      margin-top:2rem;
-  }
-  }
+}

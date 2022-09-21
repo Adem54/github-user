@@ -1,8 +1,5 @@
 import {
-  faArrowsSpin, faClipboard,
-  faPeopleGroup,
-  faUserPlus
-} from "@fortawesome/free-solid-svg-icons";
+  faArrowsSpin, faClipboard, faPeopleGroup,faUserPlus} from "@fortawesome/free-solid-svg-icons";
 import { useSelector } from "react-redux";
 import { selectUser } from "../../features/users/usersSlice";
 import GithubBox from "../../utils/components/GithubBox";

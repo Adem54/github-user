@@ -1,7 +1,4 @@
-import React, { CSSProperties } from "react";
 // STEP 1 - Include Dependencies
-// Include react
-import ReactDOM from "react-dom";
 
 // Include the react-fusioncharts component
 import ReactFC from "react-fusioncharts";
@@ -14,16 +11,14 @@ import Column2D from "fusioncharts/fusioncharts.charts";
 
 // Include the theme as fusion
 import FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
-import { selectReposByLanguage } from "../../../features/users/usersSlice";
-import { useSelector } from "react-redux";
-import { getFirstFiveData, chartConfigs,getMostPopularData } from "../../../utils/charts";
-import { getChartStyle } from "../../../utils/chartStyle";
 import ReactFusioncharts from 'react-fusioncharts';
+import { useSelector } from "react-redux";
+import { selectReposByLanguage } from "../../../features/users/usersSlice";
+import { chartConfigs, getFirstFiveData, getMostPopularData } from "../../../utils/charts";
 import styles from "./chart.module.css";
 
 // Adding the chart and theme as dependency to the core fusioncharts
 ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
-const style = getChartStyle("0 1 calc(40% - 1.8rem)");
 
 const DoughNutChart = () => {
   const repos = useSelector(selectReposByLanguage);

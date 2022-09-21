@@ -1,18 +1,16 @@
-import {createSlice,createAsyncThunk,PayloadAction} from "@reduxjs/toolkit"
+import { createSlice } from "@reduxjs/toolkit";
 import { checkRequest, searchUsersAsync } from './usersApi';
-//Bu aysnc fethc islemi extraReducer icinde kullanilacak
+
 //Redux-toolkit, asenkron islemleri api den data getirmeyi saglayan, fonksiyonlari
 //dogrudan lokal state islemimizi yaptigimiz, slice lari icindeki extrareducer lar
 //aracilgii ile bizim onlari, lokal state te aktarabilmemizi sagliyorlar
 //import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { defaultUserType, defaultFollowerType, defaultRepoType } from './user';
-import { defaultUser } from './defaultData/user';
-import { defaultFollowers } from "./defaultData/followers";
-import { defaultRepos } from "./defaultData/repos";
-import { current } from '@reduxjs/toolkit'
-import GithubBox from '../../utils/components/GithubBox';
 import { RootState } from "../../app/store";
 import { sortedDataByLanguageType, sortedDataByRepoNameType } from "../../utils/charts";
+import { defaultFollowers } from "./defaultData/followers";
+import { defaultRepos } from "./defaultData/repos";
+import { defaultUser } from './defaultData/user';
+import { defaultFollowerType, defaultRepoType, defaultUserType } from './user';
 
 interface initialStateType {
     users:defaultUserType[];
@@ -65,8 +63,7 @@ interface rateType{
     state.followers=action.payload.followers;
     state.repos=action.payload.repos;
     state.status="succeeded";
-    // console.log("state: ",state);
-    // console.log("currentState",current(state))
+    
 
   })
   .addCase(searchUsersAsync.rejected, (state,action)=>{
@@ -120,9 +117,8 @@ function getLanguage(arr:sortedDataByLanguageType[],item:defaultRepoType){
     if ((arr.length===0)) {
       arr.push({language,value:1,star:stargazers_count});
     } else if(arr.some((item:sortedDataByLanguageType)=>item.language===language)) {
-      // console.log("language: ", language);
      arr= arr.map((item:sortedDataByLanguageType)=>item.language===language ? {...item,value:item.value+1,star:item.star+stargazers_count} : item )
-    }else {//Eger gelen language array icinde hic yok ise o zaman sen o language i de ilk defa eklenecek sekilde ekle diyorz
+    }else {
         arr.push({language,value:1,star:stargazers_count});
     }
   }
@@ -132,40 +128,3 @@ function getLanguage(arr:sortedDataByLanguageType[],item:defaultRepoType){
   }
 
 
-/*
- stars: {},//repo basi-proje basi star sayisi
-      forks: {},//repo basi forks sayisi vardi
-*/
-
-
-
-
-
-/*
-Eger api den data alip state timize ekleyeceksek o zaman
-bunu slice icinde extraReducers icinde yapacagiz, normal
-reducers icinde, api ile ilgili, asenkron bir islem yapacaksak
-bir middleware araciigi ile o zaman, bu islem slice icinde
-extraReducer da olacaktir...
-
- const result2=data.reduce(getLanguage,{});
-
-      function getLanguage(obj,item){
-        let { language } = item;
-        if (language !== null) {
-          if (!(language in obj)) {
-            obj[language] = 1;
-          } else {
-            console.log("language: ", language);
-            obj[language] += 1;
-          }
-        }
-        return obj;
-      }
-
-    ONEMLI....BUNU BILELIM...
-      Biz component iceriisnde reducer da hazirladigmiz  datalarimiza useSelector uzerinden erisiriz
-      Ayrica, tetikleyecegimz, ve bir input alip da tetiklyecegimz, invoke etme islemini de useDispatch
-      kullanarak, useDispatch icinde tetikleyecegiz ya da invoke edecegiz...
-
-*/

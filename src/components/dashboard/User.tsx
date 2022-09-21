@@ -1,19 +1,11 @@
-import React, { useEffect } from "react";
-import styles from "./user.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faBuilding,
-  faLocation,
-  faLink,
-} from "@fortawesome/free-solid-svg-icons";
+import {faBuilding, faLink, faLocation} from "@fortawesome/free-solid-svg-icons";
 import { useSelector } from "react-redux";
 import { selectUser } from "../../features/users/usersSlice";
 import IconText from "../../utils/components/IconText";
+import styles from "./user.module.css";
 const User = () => {
   const { login, avatar_url, twitter_username, bio, company, blog, location } =
     useSelector(selectUser);
-
-
   return (
     <section className={styles.user}>
       <section className={styles.userTop}>

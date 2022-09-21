@@ -6,7 +6,6 @@ import App from "./App";
 import "./index.css";
 import { Auth0ProviderWithConfig } from "./auth0-provider-with-config";
 
-
 const container = document.getElementById("root")!;
 const root = createRoot(container);
 
@@ -26,9 +25,6 @@ root.render(
      clientId={process.env.REACT_APP_AUTH0_CLIENTID} 
      redirectUri={window.location.origin} 
      >
-
-
+     <App/>
       </Auth0Provider>
-
-
 */

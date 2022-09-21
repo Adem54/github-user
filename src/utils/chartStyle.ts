@@ -1,5 +1,4 @@
 import React,{CSSProperties} from "react";
-
 export interface styleType {
     flex:string; /* flex:0(flex-grow) 1(flex-shrink) 25%(flex-basis)*/
     display: string;
@@ -12,9 +11,6 @@ export interface styleType {
 }
 
 type chartStypeType=CSSProperties | undefined ;
-
-
-
 
   export const getChartStyle=(flex:string):chartStypeType=>{
     return {

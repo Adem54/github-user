@@ -21,8 +21,7 @@ const GithubBox = (props:githubBoxPropsType) => {
 }
 
 interface githubBoxPropsType {
-  //icerisinde artmaya acik olan dizi ler icin eger dizi belli bir formatta ise bu sekilde type i tanimlanabiliyor
-  styles:{ readonly [key: string]: string; };//bu da styles in type durumudur ve bu sekilde tanimlanir bu cok onemli bunu bilelim, cok kullanacagiz..
+  styles:{ readonly [key: string]: string; };
   fontAwesomeIcon:IconDefinition;//bu font-awesome dan gliyor
   title:string;
   resultNumber:number;
