@@ -8,7 +8,7 @@
 
 ### About The Project
 
-The project called Github-App makes us see any users who are in public in Github by searching them on the user name, Githup performance in detail. In the project shown in details with graphs, we can see the most forked projects, the most used projects, the most used programming language, and the programming languages used in the most starred projects. In the project, where the Login-Signup system was integrated by using Auth0, our Dashboard page was protected by using ProtectedTroute.
+The project called Github-App makes us see any users who are in public in Github by searching them on the user name, Githup performance in detail. In the project shown in details with graphs, we can see the most forked projects, the most used projects, the most used programming language, and the programming languages used in the most starred projects. In the project, where the Login-Signup system was integrated by using Auth0, our dashboard page(component) was protected by using ProtectedRroute.
 
 ## Built With
 
