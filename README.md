@@ -36,7 +36,7 @@ Runs the app in the development mode. Open [http://localhost:3000](http://localh
 #### Typescript
 
 
-  <img width="580" src="https://user-images.githubusercontent.com/48107744/188970608-d8880d11-498c-49cf-a822-c9cb66edb411.png" >
+  <img width="580" src="https://user-images.githubusercontent.com/48107744/191479550-dd9de953-8f7d-4fd5-8f55-f9c70b809c29.png" >
 
 #### React Context
 
