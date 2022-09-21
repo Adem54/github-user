@@ -9,10 +9,8 @@ import { useSelector } from "react-redux";
 import { selectReposByLanguage } from "../../../features/users/usersSlice";
 import { chartConfigs, getFirstFiveData, getMostUsedData } from "../../../utils/charts";
 import styles from "./chart.module.css";
-
 // Resolves charts dependancy
 charts(FusionCharts);
-
 
 const PieChart = () => {
   const repos = useSelector(selectReposByLanguage);
@@ -22,17 +20,12 @@ const PieChart = () => {
     caption: "Most Used",
   //   width: "100%",
   //  height: "350",
-   
     chartData,
   });
-
   return (
     <section className={[styles.chartItem,styles.pie].join(" ")}>
-      <ReactFusioncharts 
-      {...myChartConfigs}
-      />
-      </section>
-    
+      <ReactFusioncharts  {...myChartConfigs}/>
+      </section>   
   );
 };
 

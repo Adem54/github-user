@@ -1,5 +1,4 @@
-import {
-  faArrowsSpin, faClipboard, faPeopleGroup,faUserPlus} from "@fortawesome/free-solid-svg-icons";
+import { faArrowsSpin, faClipboard, faPeopleGroup,faUserPlus} from "@fortawesome/free-solid-svg-icons";
 import { useSelector } from "react-redux";
 import { selectUser } from "../../features/users/usersSlice";
 import GithubBox from "../../utils/components/GithubBox";
@@ -18,7 +17,6 @@ const GithubCondBox = () => {
           resultNumber:public_repos,
         }}
       />
-
       <GithubBox
         {...{
           styles,
@@ -28,7 +26,6 @@ const GithubCondBox = () => {
           resultNumber:public_gists,
         }}
       />
-
       <GithubBox
         {...{
           styles,
@@ -37,7 +34,6 @@ const GithubCondBox = () => {
           resultNumber:followers,
         }}
       />
-
       <GithubBox
         {...{
           styles,

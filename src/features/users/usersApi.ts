@@ -20,7 +20,6 @@ export const searchUsersAsync=createAsyncThunk("github_user/fetchUser",async(sea
         const res=await axios.get<defaultUserType>(`${baseURL}/users/${searchedData}`);
         const user= res.data;
         const {followers_url,repos_url}=user;
-   
         const resFollowers=await axios.get<defaultFollowerType[]>(`${followers_url}?per_page=100`);
         const followers= resFollowers.data;
         const resRepos=await axios.get<defaultRepoType[]>(`${repos_url}?per_page=100`);

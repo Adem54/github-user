@@ -6,7 +6,6 @@ import { NotFound } from "./components/notFound";
 import ProtectedRoute from "./components/protectedRoute";
 
 function App() {
-
   return (
     <BrowserRouter>
     <div className="App">

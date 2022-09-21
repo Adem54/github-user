@@ -6,11 +6,9 @@ export const Auth0ProviderWithConfig = ({
   const domain = process.env.REACT_APP_AUTH0_DOMAIN;
   const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
   const redirectUri = window.location.origin;//http://localhost:3000
-  
   if (!(domain && clientId && redirectUri)) {
     return null;
   }
-
   return (
     <Auth0Provider
       domain={domain}

@@ -7,7 +7,7 @@ import classNames from "classnames";
 //Bu da bir kutuphane, sadece css leri className icinde
 //kullanmak icin
 import { useAuth0 } from "@auth0/auth0-react";
-import { Navigate, useNavigate } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 import Loading from "../../utils/loading";
 const Home = () => {
   const { loginWithRedirect,isAuthenticated, isLoading} =

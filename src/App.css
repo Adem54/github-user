@@ -23,16 +23,13 @@ body {
 }
 
 @media only screen and (max-width: 1800px) {
-
   .mainWrapper {
     width:80%;
   }
   
 }
 
-
 @media only screen and (max-width: 1544px) {
- 
   .mainWrapper {
     width:90%;
   }
