@@ -22,7 +22,6 @@
 
 .pie{
     flex:0 2 calc(40% - 1.8rem);
-    background-color: cyan;
 }
 
 
