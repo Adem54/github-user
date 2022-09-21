@@ -50,7 +50,7 @@ Runs the app in the development mode. Open [http://localhost:3000](http://localh
 
   <img width="580" src="https://user-images.githubusercontent.com/48107744/191480096-13719877-9b97-408e-9d4a-3ca7dce1baa3.png" >
   
-#### Reusable react compponent
+#### Reusable react component
 
   
   <img width="580" src="https://user-images.githubusercontent.com/48107744/191480233-2072b6d1-4c97-4883-8652-2070a6d13721.png" >
