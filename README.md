@@ -23,6 +23,7 @@ The project called Github-App makes us see any users who are in public in Github
 <li>DYNAMIC AXIOS DATA FETCHING</li>
 <li>AUTH0 LOGIN-SIGNUP</>
 <li>REUSABLE COMPONENTS</li>
+<li>RESPONSIVE DESIGN</li>
  
 </ul>
 
