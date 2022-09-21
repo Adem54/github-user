@@ -38,22 +38,29 @@ Runs the app in the development mode. Open [http://localhost:3000](http://localh
 
   <img width="580" src="https://user-images.githubusercontent.com/48107744/191479550-dd9de953-8f7d-4fd5-8f55-f9c70b809c29.png" >
 
-#### React Context
+#### Redux-toolkit
 
-  <img width="580" src="https://user-images.githubusercontent.com/48107744/188971930-106db7e7-ae9d-4518-8843-9f048d6a88a7.png" >
+  <img width="580" src="https://user-images.githubusercontent.com/48107744/191479769-4aab66d0-eaa2-401a-ab54-26b5f5ac94cf.png" >
 
-#### React userReducer
+#### Auth0
 
-  <img width="580" src="https://user-images.githubusercontent.com/48107744/188972186-b6149f07-1bb6-4862-b17c-17987260975b.png" >
+  <img width="580" src="https://user-images.githubusercontent.com/48107744/191479904-4bfe92be-6778-43a8-a665-a375da315c1b.png" >
 
 #### React-router-dom
 
-  <img width="580" src="https://user-images.githubusercontent.com/48107744/188972903-792a2bf0-b3cc-415c-a05e-92f69f2cdf4f.png" >
+  <img width="580" src="https://user-images.githubusercontent.com/48107744/191480096-13719877-9b97-408e-9d4a-3ca7dce1baa3.png" >
   
-#### Dynamic-axios-fetch
+#### Reusable react compponent
 
   
-  <img width="580" src="https://user-images.githubusercontent.com/48107744/188973281-9402a57f-000c-45f8-8336-bae1be31bba2.png" >
+  <img width="580" src="https://user-images.githubusercontent.com/48107744/191480233-2072b6d1-4c97-4883-8652-2070a6d13721.png" >
+  
+  
+  #### React css module
+
+  
+  <img width="580" src="https://user-images.githubusercontent.com/48107744/191480417-2e6a074d-3e5e-4e3f-93d0-ea4b2de2c2e0.png" >
+  
 
 
 
