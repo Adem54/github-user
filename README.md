@@ -24,6 +24,7 @@ The project called Github-App makes us see any users who are in public in Github
 <li>AUTH0 LOGIN-SIGNUP</>
 <li>REUSABLE COMPONENTS</li>
 <li>RESPONSIVE DESIGN</li>
+<li>FONTAWESOME ICONS</li>
  
 </ul>
 
