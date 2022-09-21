@@ -157,7 +157,7 @@ export const chartConfigs = ({
         bgColor: "#FFFFFF",
         showBorder: 0,
         decimals: 0,
-        pieRadius: "58%", //bunun ile pie ile doughnut grafiklerinin sayfa icinde buyuklugnu ayarlayabiliriz
+        pieRadius: "50%", //bunun ile pie ile doughnut grafiklerinin sayfa icinde buyuklugnu ayarlayabiliriz
 
         xAxisNameFontSize: 16,
         yAxisNameFontSize: 16,
